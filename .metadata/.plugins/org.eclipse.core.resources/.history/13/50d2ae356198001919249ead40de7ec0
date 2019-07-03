@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class VetorFatorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		 Scanner scan = new Scanner (System.in);
+	     
+	     int [] vetorA = new int [1];
+	     int [] vetorB = new int [vetorA.length];
+	     
+	     
+	    
+	     for(int i=0; i<vetorA.length; i++) {
+	    	 System.out.println("Entre com o vetor da posição " + i);
+	    	 vetorA[i]=scan.nextInt(); 
+	     }
+
+	     for(int i=0; i<vetorA.length; i++) {
+	    	 
+	    	 if(vetorA[i]==0) {
+	    		 vetorB[i]=1;
+	    	 } else {
+	    		 for(int j=0; j<vetorA[i]; j++) {
+	    			 vetorA[i]*=vetorA[i]-1;
+	    		 }
+	    		 vetorB[i]=vetorA[i];
+	    	 }
+	     }
+			
+		}
+
+	}

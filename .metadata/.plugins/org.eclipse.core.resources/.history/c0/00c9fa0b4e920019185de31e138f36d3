@@ -1,0 +1,30 @@
+
+public class Lampada {
+	
+	String modelo;
+	String tensao;
+	int potencia;
+	String cor;
+	String tipoLuz;
+	int garantiaMeses;
+	String [] tipos;
+	boolean tipoAbajur;
+	
+	
+	boolean ligado;
+	
+	
+	boolean ligadoLampada() {
+		if(this.ligado) {
+			System.out.println("A lampdada esta ligado");
+		}
+		return ligado;
+	}
+	boolean desligadoLampda() {
+		if(this.ligado==false) {
+			System.out.println("A Lampada está desligado");
+		}
+		return ligado;
+	}
+
+}

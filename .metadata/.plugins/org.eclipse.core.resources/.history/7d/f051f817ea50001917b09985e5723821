@@ -1,0 +1,25 @@
+package com.gilberto.curso.basico;
+
+import java.util.Scanner;
+
+public class wh {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	Scanner entrada= new Scanner(System.in);
+	
+	//System.out.println("Digite as notas");
+	
+	
+	int n=entrada.nextInt();
+	int soma=0;
+	
+	for(int i=3; i>n; i++) {
+		
+		soma +=n;
+		
+	}
+	System.out.println("A soma é : " +soma);
+	}
+}

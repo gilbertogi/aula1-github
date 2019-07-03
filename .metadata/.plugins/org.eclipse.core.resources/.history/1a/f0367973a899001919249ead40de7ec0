@@ -1,0 +1,12 @@
+package entidades;
+
+public class CoversaoMoeda {
+	
+	
+	public static double IOF=0.06;
+	
+	public static double dollarParaReal(double motante, double precoDollar) {
+		return motante*precoDollar*(1+IOF);
+	}
+
+}

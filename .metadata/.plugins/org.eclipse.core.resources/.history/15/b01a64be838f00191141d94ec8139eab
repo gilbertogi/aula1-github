@@ -1,0 +1,22 @@
+
+public class Vet15 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+ double [] temperatura = new double [366];
+ 
+   temperatura[0]=31.3; // acessara a temperatura/ inicializar o array;
+   temperatura[1]=32;
+   temperatura[2]=33;
+   temperatura[3]=34;
+   temperatura[4]=35;
+   temperatura[5]=36.6;
+   
+   System.out.println("O valor da temperatura do dia 1 é:" + temperatura[0]);
+
+	}
+
+}

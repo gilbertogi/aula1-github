@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class VetorNumeroPrimo {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner scan = new Scanner(System.in);
+
+		int [] vetorA= new int [5];
+		boolean primo=true;
+		String msg;
+		
+    for(int i =0; i<vetorA.length; i++) {
+	System.out.println("Entre com a valor da posição " + i);
+		vetorA[i]=scan.nextInt();
+	}
+    
+   for( int i=0; i<vetorA.length; i++) {
+	   
+	   for(int j=2; j<vetorA[i]; j++) {
+		   if(vetorA[i]%j==0) {
+			   primo=false;
+			   break; // break foi usado para pular
+		   }
+	   }
+	   if(primo) {
+		   msg="é primo";
+	   } else {
+		   msg="Não é primo";
+	   }
+	   System.out.println(vetorA[i] + msg);
+   }
+
+	}
+}

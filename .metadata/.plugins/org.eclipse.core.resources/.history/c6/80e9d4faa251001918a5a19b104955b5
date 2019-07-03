@@ -1,0 +1,30 @@
+package com.gilberto.curso.basico;
+
+import java.util.Scanner;
+
+
+public class wh {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	Scanner entrada= new Scanner(System.in);
+	  boolean infValida=false;
+	 
+	  String nome;
+	 
+	  
+	  do {
+		  
+	     System.out.println("Entre com o Nome");
+         nome=entrada.nextLine();
+         if(nome.length()>=3) {
+        	 infValida=true;
+         }else {
+        	 System.out.println("O nome precisa no minimo 3 carateres");
+         }
+
+	}while(!infValida);
+	}
+}
+ 

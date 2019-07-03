@@ -1,0 +1,33 @@
+package com.gilberto.curso.basico;
+
+import java.util.Scanner;
+
+
+public class wh {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	Scanner entrada= new Scanner(System.in);
+	
+	
+	String nome="";
+	String senha="";
+	
+	while(nome.equals(senha)) {
+	System.out.println("Insira o nome do Usuario");
+	nome=entrada.nextLine();
+	System.out.println("Insira  senha");
+	senha=entrada.nextLine();
+	   if (nome.equals(senha)){
+		System.out.println("A senha e usuario é mesmo, digite novamanete");
+	}
+	
+	}
+	System.out.println("Correto");
+	
+	}
+	
+	}
+
+

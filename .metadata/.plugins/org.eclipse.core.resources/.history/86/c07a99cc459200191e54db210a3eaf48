@@ -1,0 +1,21 @@
+
+public class Carro {
+	
+	String nome;
+	String modelo;
+	int numPassageiro;
+	double capCombustivel;
+	double consumoCombustivel;
+	
+	
+	void exibirAutonomia() {
+		System.out.println("Atonomia é :" + capCombustivel*consumoCombustivel);
+	}
+	
+	double obterAultonomia() {
+		
+		System.out.println("O metodo Obter Autonomia foi chamado");
+		return capCombustivel*consumoCombustivel;
+	}
+	
+}

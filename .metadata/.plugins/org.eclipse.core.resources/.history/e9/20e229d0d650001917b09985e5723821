@@ -1,0 +1,18 @@
+package com.gilberto.curso.basico;
+
+public class wh {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int i=1;
+		int max=10;
+		
+		System.out.println("Contando ate " +max);
+		
+		
+		
+
+	}
+
+}

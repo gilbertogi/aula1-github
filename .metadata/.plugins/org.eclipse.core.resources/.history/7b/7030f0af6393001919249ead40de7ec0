@@ -1,0 +1,17 @@
+
+public class TesteContaCorrente {
+
+	public static void main(String[] args) {
+
+
+	ContaCorrente conta = new ContaCorrente();
+	
+	conta.numero="1111111";
+	conta.agencia="Rua da India";
+	conta.especial=true;
+	conta.limiteEspecial=500;
+	conta.saldo=-100;
+
+	}
+
+}

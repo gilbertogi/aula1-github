@@ -1,0 +1,74 @@
+package com.gilberto.curso.basico;
+
+import java.util.Scanner;
+
+
+public class wh {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	Scanner entrada= new Scanner(System.in);
+	  boolean infValida=false;
+	 
+	  String nome, sexo;
+	  int idade;
+	  double salario;
+	  
+	  do {
+		  
+	     System.out.println("Entre com o Nome");
+         nome=entrada.next();
+         if(nome.length()>=3) {
+        	 infValida=true;
+         }else {
+        	 System.out.println("O nome precisa no minimo 3 carateres");
+         }
+
+	}while(!infValida); //falso
+	  
+	  infValida=false;
+	  
+	  do {
+		  System.out.println("Entre com a idade");
+		  idade=entrada.nextInt();
+		   if(idade >=0 && idade<=150) {
+			  infValida=true;
+		  }else {
+			  System.out.println("Idade precisa ser entre 0 a 150");
+		  }
+	  }while(!infValida);
+	  
+	  infValida=false;
+	  
+	  do {
+		  System.out.println("Entre com o salario");
+		  salario=entrada.nextDouble();
+		  if(salario>0) {
+			  infValida=true;
+		  }else {
+			  System.out.println("O salario não pode ser 0 (zero)");
+		  }
+		  
+	  }while(!infValida);
+	  
+	  infValida=false;
+	  
+	  do {
+		  System.out.println("Entre com o género");
+		  sexo=entrada.next();
+		  if( sexo.equalsIgnoreCase("M") || sexo.equalsIgnoreCase("F")){
+			  infValida=true;
+		  }
+		  else 
+		  {
+			  System.out.println("O Genero deve ser M ou F");
+		  }
+		  
+	  }  while(!infValida);
+	  }
+	}
+	
+	
+
+ 

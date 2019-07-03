@@ -1,0 +1,33 @@
+package com.gilberto.curso.basico;
+
+import java.util.Scanner;
+
+public class wh {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	Scanner entrada= new Scanner(System.in);
+	
+	
+	   boolean notaValida=false;
+	
+	 
+      System.out.println("Entre com uma nota");
+   
+  
+  double nota=entrada.nextDouble();
+   
+  if(nota>=0 && nota <= 10) {
+	  notaValida=true;
+  
+	  System.out.println("Voce digitou: " + nota);
+  }
+  else {
+	  System.out.println("Nota Invalida, digite novamente");
+  }
+  
+  while(!notaValida);	
+}
+}
+

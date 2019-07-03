@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class VetorCrecebeAB {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		 
+		
+		 int [] vetorA= new int[10];
+		 int [] vetorB=new int  [vetorA.length];
+		 int [] vetorC= new int [20];
+		 
+		 
+		 for(int i=0; i<vetorA.length; i++) {
+	 System.out.println("Entre com valor do Vetor A da posiçao " + i);
+	 vetorA[i]=scan.nextInt();
+
+	      vetorC[i]=vetorA[i];
+		 }
+		 for(int i=0; i<vetorA.length; i++) {
+			 System.out.println("Entre com valor do Vetor B"
+			 		+ " da posiçao " + i);
+			 vetorB[i]=scan.nextInt();
+
+			      vetorC[10+i]=vetorB[i];
+				 }
+		
+		     System.out.println();
+		   System.out.println("Imprima vetor A : ");
+		 for(int i=0; i<vetorA.length; i++) {
+			 System.out.print(vetorA[i] + " ");
+		 }
+		   System.out.println();
+		   System.out.println("Imprima vetor B : ");
+		 for(int i=0; i<vetorA.length; i++) {
+			 System.out.print(vetorB[i] + " ");
+		 }
+		 System.out.println();
+		   System.out.println("Imprima vetor C : ");
+		 for(int i=0; i<20; i++) {
+			 System.out.print(vetorC[i] + " ");
+		 }
+	}
+
+}

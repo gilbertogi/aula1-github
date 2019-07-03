@@ -1,0 +1,21 @@
+
+public class TesteLampada {
+
+	public static void main(String[] args) {
+
+
+		Lampada lampada = new Lampada();
+		
+		lampada.modelo="A60";
+		lampada.tensao="Bivolt";
+		lampada.potencia=7;
+		lampada.cor="amarelha";
+		lampada.garantiaMeses= 6;
+		lampada.tipoAbajur=true;
+
+		lampada.tipos= new String [5];  // ñ esqça esse espaço
+		lampada.tipos[0]= "Abjur";
+		lampada.tipos[1]= "Lampeos";
+	}
+
+}

@@ -1,0 +1,24 @@
+
+public class TesteCarro {
+
+	public static void main(String[] args) {
+		
+		Carro van = new Carro();
+		
+		van.nome="Kia";
+		van.modelo="KiaPicante";
+		van.numPassageiro=5;
+		van.capCombustivel=12;
+		van.consumoCombustivel=12;
+		
+		System.out.println(van.nome);
+		van.exibirAutonomia();
+		Carro van2 = new Carro();
+		van2.capCombustivel=8;
+		van2.consumoCombustivel=8;
+		van2.obterAutonomia();
+		System.out.println(van2.obterAutonomia());
+
+	}
+
+}
